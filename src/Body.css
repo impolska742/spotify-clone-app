@@ -53,6 +53,7 @@
 .body__shuffle {
   font-size: 70px !important;
   margin: 20px 20px 0px 20px;
+  /* color: #1db954; */
 }
 
 .body__shuffle:hover {
@@ -62,7 +63,7 @@
 
 .body__favouriteIcon {
   font-size: 40px !important;
-  color: #cbc2c6;
+  color: #1db954;
   margin-top: 20px;
 }
 
