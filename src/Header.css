@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+  padding: 10px;
 }
 
 .header__left {
@@ -13,16 +14,24 @@
   display: flex;
   align-items: center;
   padding: 10px;
+  margin-left: 10px;
 }
 
 .header__left > input {
   border: none;
   width: 100%;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
 
 .header__right {
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 
 .header__right > h4 {

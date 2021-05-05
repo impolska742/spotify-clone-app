@@ -24,3 +24,8 @@
 .login > a:hover {
   opacity: 80%;
 }
+
+.login > img {
+  width: 50%;
+  object-fit: contain;
+}

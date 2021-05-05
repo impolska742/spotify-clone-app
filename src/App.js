@@ -41,9 +41,6 @@ function App() {
         })
       );
 
-      // console.log(user.id);
-      // t4fozr5l063tvmihtydyihk7t
-
       spotify.getPlaylist("37i9dQZEVXcTNtRt3LD5o2").then((response) =>
         dispatch({
           type: "SET_DISCOVER_WEEKLY",
@@ -52,9 +49,6 @@ function App() {
       );
     }
   }, []);
-
-  // console.log(user);
-  // console.log("I HAVE A TOKEN ==> ", token);
 
   return (
     <div className="app">

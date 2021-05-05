@@ -1,15 +1,16 @@
 .body {
   /* border: 1px solid red; */
-  overflow: scroll;
+  overflow-y: overlay;
   height: 100vh;
   flex: 0.8;
-  /* background-color: ; */
   color: white;
   padding: 10px;
   background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
 }
 
-/* #ea8fb5 */
+.body::-webkit-scrollbar {
+  display: none;
+}
 
 .body__info {
   display: flex;
@@ -44,6 +45,7 @@
 .body__icons {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .body__icons > .MuiSvgIcon-root {
