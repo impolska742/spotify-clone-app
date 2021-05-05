@@ -8,11 +8,18 @@ import SongRow from "./SongRow";
 
 function Body({ spotify }) {
   const [{ discover_weekly }, dispatch] = useDataLayerValue();
-  console.log("DISCOVER WEEKLY IS HERE", discover_weekly);
+  // console.log("DISCOVER WEEKLY IS HERE", discover_weekly);
 
   const [isLiked, setIsLiked] = useState(false);
   return (
     <div className="body">
+      <div class="body__background">
+        <div class="body__cube"></div>
+        <div class="body__cube"></div>
+        <div class="body__cube"></div>
+        <div class="body__cube"></div>
+        <div class="body__cube"></div>
+      </div>
       <Header spotify={spotify} />
       <div className="body__info">
         <img src={discover_weekly?.images[0].url} alt=" " />

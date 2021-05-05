@@ -3,6 +3,12 @@ import "./SongRow.css";
 
 function SongRow({ track }) {
   console.log(track);
+
+  const msToMins = (time) => {
+    const seconds = time / 1000;
+    return seconds / 60;
+  };
+
   return (
     <div className="songRow">
       {/* <p>{}</p> */}
@@ -14,6 +20,7 @@ function SongRow({ track }) {
           <span> - {track.album.name}</span>
         </p>
       </div>
+      {/* <p className="songRow__duration">{msToMins(track.duration_ms)}</p> */}
     </div>
   );
 }

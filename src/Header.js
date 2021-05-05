@@ -8,7 +8,7 @@ function Header({ spotify }) {
   // const [{ playlists }, dispatch] = useDataLayerValue();
   const [{ user }, dispatch] = useDataLayerValue();
 
-  console.log(user);
+  // console.log(user);
   return (
     <div className="header">
       <div className="header__left">
