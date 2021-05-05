@@ -40,6 +40,16 @@ function App() {
           playlists: playlists,
         })
       );
+
+      // console.log(user.id);
+      // t4fozr5l063tvmihtydyihk7t
+
+      spotify.getPlaylist("37i9dQZEVXcTNtRt3LD5o2").then((response) =>
+        dispatch({
+          type: "SET_DISCOVER_WEEKLY",
+          discover_weekly: response,
+        })
+      );
     }
   }, []);
 
